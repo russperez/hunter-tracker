@@ -1,0 +1,19 @@
+{
+  "name": "Hunter System — Russ Tracker",
+  "short_name": "Hunter Sys",
+  "description": "Solo Leveling fitness tracker — 12 week body transformation",
+  "start_url": "/hunter-tracker/",
+  "scope": "/hunter-tracker/",
+  "display": "standalone",
+  "background_color": "#04060f",
+  "theme_color": "#04060f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
