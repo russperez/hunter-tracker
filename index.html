@@ -789,12 +789,7 @@ function renderStatus(){
     {txt:'Log a night jog',done:jogged},
   ];
   document.getElementById('quest-date').textContent=fmt(td);
-  document.getElementById('quest-list').innerHTML=quests.map(q=>`
-    <div class="qitem${q.done?' done':''}">
-      <div class="qcheck${q.done?' done'}">${q.done?'✓':'○'}</div>
-      <div class="qtxt${q.done?' done'}">${q.txt}</div>
-      <div class="qrwd">${q.done?'DONE':'+EXP'}</div>
-    </div>`).join('');
+  document.getElementById('quest-list').innerHTML=quests.map(q=>`<div class="qitem${q.done?' done':''}"><div class="qcheck${q.done?' done'}">${q.done?'v':'o'}</div><div class="qtxt${q.done?' done'}">${q.txt}</div><div class="qrwd">${q.done?'DONE':'+EXP'}</div></div>`).join('');
 
   // waist chart
   const wd=D.body.filter(r=>r.waist).slice(-8);
